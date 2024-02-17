@@ -1,0 +1,354 @@
+@font-face {
+    font-family: archi;
+    src:url(./archia-light-webfont.woff)
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:gilroy;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 999;
+    background-color: #fff;
+    mix-blend-mode: difference;
+}
+#main{
+    background-color: #fff;
+}
+
+#page1{
+    height: 100vh;
+    /* background-color: rgb(62, 62, 62); */
+    width: 100%;
+    position: relative;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5vw 8vw;
+    position: fixed;
+    width: 100%;
+    mix-blend-mode: difference;
+    z-index: 9;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    gap: 3.5vw;
+}
+
+#nav h4{
+    font-size: 0.9vw;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#nav i{
+    font-size: 1.5vw;
+    color: #fff;
+    display: none;
+}
+
+#page1 video{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 8vw 5vw;
+
+}
+
+#page2 h1{
+    font-size: 1.5vw;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#page2-content{
+    /* background-color: red; */
+    display: flex;
+    margin-top: 5vw;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#left-page2{
+    height: 300px;
+    width: 42%;
+    background-color: rgb(237, 237, 237);
+    border-radius: 10px;   
+    position: relative;
+    overflow: hidden;
+
+}
+#blur{
+    height: 100%;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.325);
+    backdrop-filter: blur(20px);
+    position: relative;
+    z-index: 9;
+}
+
+#left-page2 img{
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+#right-page2{
+    height: 300px;
+    width:45%;
+    /* background-color: blue; */
+}
+
+#right-page2 h1{
+    font-size: 3vw;
+    font-weight: 500;
+}
+
+#right-page2 p{
+    font-size: 1.3vw;
+    font-weight: 300;
+    margin: 2vw 0;
+    color: #000000c9;
+}
+
+
+#right-page2 button{
+    font-size: 1.1vw;
+    font-weight: 500;
+    padding: 14px 30px;
+    border-radius: 50px;
+    border: 2px solid #000000c9;
+    background-color: transparent;
+    color: #000000;
+
+}
+
+#page22{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 8vw 6vw;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+#left-page22{
+    height: 80vh;
+    width: 53%;
+    /* padding-top: 10px;
+    padding-left: 10px; */
+    gap: 10vw;
+    position: relative;
+    top: 2vw;
+
+}
+#right-page22{
+    height: 80vh;
+    width: 40%;
+    position: relative;
+    top: 5vw;
+   
+}
+
+#left-page22 h1{
+    width: 85%;
+    font-size: 3.2vw;
+    font-weight: 400;
+    line-height: 4.2vw;
+}
+
+#left-page22 p{
+    font-size: 1.8vw;
+    line-height: 2.5vw;
+    font-weight: 300;
+    margin: 1vw 0;
+    color: #000000c9;
+    padding: 10px 0;
+    width: 95%;
+}
+#left-page22 p span{
+    font-size: 2vw;
+    font-weight: 400;
+    color: #000000;
+}
+
+
+#left-page22 button{
+    font-size: 1.1vw;
+    font-weight: 500;
+    padding: 14px 30px;
+    border-radius: 50px;
+    border: 2px solid #000000c9;
+    background-color: transparent;
+    color: #000000;
+    /* bottom: 4%; */
+
+}
+#right-page22 video{
+    /* position: relative; */
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-size: contain;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    background-image: url(https://github.com/saarthack/brain-space/blob/main/bg.png?raw=true);
+    background-size: cover;
+    background-position: top;
+    padding-bottom: 10vw;
+}
+
+#page3 #page3-top {
+    width: 100%;
+    height: 100px;
+}
+
+#helmet {
+    /* background-color: blue; */
+    width: 100%;
+}
+
+#page3-content-1 {
+    width: 100%;
+    padding: 5vw 0;
+
+    text-align: center;
+}
+
+#page3-content-1 h2 {
+    font-size: 3vw;
+    font-family: archi;
+    font-weight: 100;
+
+}
+
+#page3-content-1 p {
+    font-size: 1.5vw;
+    margin: 2vw 0;
+    font-family: archi;
+    font-weight: 100;
+
+}
+
+#page3-content-1 button {
+    padding: 1vw 2vw;
+    border-radius: 50px;
+    border: 2px solid #000;
+    background-color: transparent;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+
+#page3 #page3-content-2 {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+    margin-top: 10vw;
+    padding: 2vw 7vw;
+    position: relative;
+}
+
+#page3-content-2 video {
+    height: 100%;
+    /* width: 40%; */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#page3-content-2 h5{
+    font-size: 2vw;
+    width: 50%;
+    font-family: archi;
+
+}
+
+#page3 #page3-content-22 {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    /* background-color: red; */
+    margin-top: 10vw;
+    padding: 2vw 7vw;
+    position: relative;
+}
+
+#page3-content-22 video {
+    height: 100%;
+    /* width: 40%; */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#page3-content-22 h5{
+    font-size: 2vw;
+    width: 50%;
+    font-family: archi;
+    display: flex;
+    flex-direction: column;
+    /* padding: 30px 0; */
+    gap: 20px;
+
+}
+#page3-content-22 h5 button{
+    font-size: 1.4vw;
+    font-weight: 500;
+    padding: 5px 5px;
+    border-radius: 50px;
+    border: 2px solid #000000c9;
+    background-color: transparent;
+    color: #000000;
+    width: 40%;
+    /* bottom: 4%; */
+
+}
+
